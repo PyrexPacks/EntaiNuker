@@ -1,0 +1,4 @@
+name: EntaiNuker
+version: '1.0'
+main: org.pyrex.entainuker.Entainuker
+api-version: '1.18'

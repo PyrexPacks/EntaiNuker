@@ -13,7 +13,7 @@ public class Timer extends BukkitRunnable {
     public void run() {
         if (Entainuker.brockbreakcounter.get(this.player) >= 10) {
             this.kickLocation = this.player.getLocation();
-            this.player.kickPlayer("Nuker alapos gyanújával le van tartóztatva!");
+            this.player.kickPlayer("Nuker alapos gyanújával le van tartóztatva! A plugint csinálta: Pyrex");
             for (Player pl : Bukkit.getOnlinePlayers()) {
                 if (!pl.hasPermission("entainuker.figyelmeztetes")) continue;
                 pl.sendMessage(ChatColor.RED + "Nukerezett a " + this.player.getName() + " nevű játékos.");
